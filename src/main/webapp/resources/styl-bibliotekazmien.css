@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-10-02, 10:00:28
+    Author     : kursant2
+*/
+body {
+    font-family: Garamond;
+    background-image:url('logo_books1.jpg');
+}
+div {
+    /*border: 2px solid darkgoldenrod;*/
+    padding: 10px 40px; 
+/*    border-radius: 25px;*/
+
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url('small1.png');
+/*    background: rgba(246,247,230,1);
+    background: -moz-linear-gradient(top, rgba(246,247,230,1) 0%, rgba(240,237,170,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,247,230,1)), color-stop(100%, rgba(240,237,170,1)));
+    background: -webkit-linear-gradient(top, rgba(246,247,230,1) 0%, rgba(240,237,170,1) 100%);
+    background: -o-linear-gradient(top, rgba(246,247,230,1) 0%, rgba(240,237,170,1) 100%);
+    background: -ms-linear-gradient(top, rgba(246,247,230,1) 0%, rgba(240,237,170,1) 100%);
+    background: -o-linear-gradient(to bottom, rgba(246,247,230,1) 0%, rgba(240,237,170,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7e6', endColorstr='#f0edaa', GradientType=0 );*/
+    height:630px;
+    width:330px;
+    float:none;
+
+}
+table.b {
+    width:300px;
+    height:400px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+td.b {
+    border:1px none;
+    border-width:1px 1px 1px 1px;
+    text-align:left;
+    padding-left:0px;
+    font-size:12px;
+    font-family:Arial;
+    font-weight:bold;
+    color:#000000;
+}
+h3 {
+    text-align: center;
+    padding-top: 20px;
+}

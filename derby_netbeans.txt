@@ -1,0 +1,21 @@
+
+
+CREATE TABLE ksiazki (
+  id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1),
+  tytul        VARCHAR(255),
+  opis    	VARCHAR(255),
+  autor	     VARCHAR(255),
+kraj		VARCHAR(255);
+  ilosc        INT,
+  kategoria   VARCHAR(255)
+);
+
+id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1)
+update ksiazki set tytul = "Kolacja z zabójc¹", opis = 'ten', autor = Aleksandra Marinina, ilosc = 3, kategoria = krymina³ where id = 43;
+http://www.binarytides.com/create-autoincrement-columnfield-in-apache-derby/
+
+select id FROM towary order by id desc FETCH FIRST ROW ONLY;
+
+http://www.tutorialspoint.com/spring/spring_jdbc_example.htm
+
+http://squirrel-sql.sourceforge.net/
