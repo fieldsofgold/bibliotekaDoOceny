@@ -8,26 +8,35 @@
         <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
     </head>
     <body>
-        <div id="content"
-             <h1>Projekt ko&#324;cowy</h1>
-            <p>Projekt powsta&#322; w czasie realizacji programu <b>"Programowanie w j&#281;zyku Java"</b> w Altkom Akademii we Wroc&#322;awiu</p>
-
-            <p>Niezb&#281;dna konfiguracja bazy danych (derby)</p>
-            <p>CREATE TABLE ksiazki (</p>
-            <p>id INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1),
-            <p>tytul        VARCHAR(255),</p>
-            <p>opis    	VARCHAR(255),</p>
-            <p>autor	VARCHAR(255),</p>
-            <p>kraj		VARCHAR(255),</p>
-            <p>ilosc        INT,</p>
-            <p>kategoria    VARCHAR(255)</p>
-            <p>);</p>
+        <div id="article"
+             <div id="pkp">
+            <h1>Projekt ko&#324;cowy</h1>
+            <p>Projekt powsta&#322; w czasie realizacji programu <b>"Programowanie w j&#281;zyku Java"</b> w Altkom Akademii we Wroc&#322;awiu.</p>
+            </br>
+            </br>
+            </br>
+            
+            
+            <p>Niezb&#281;dna konfiguracja bazy danych (Derby):</p>
+            <table>
+            <tr><th colspan="2">CREATE TABLE ksiazki(</th></tr>
+            <tr><td>id</td> <td>INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 0, INCREMENT BY 1),</td></tr>
+            <tr><td>tytul</td> <td>VARCHAR(255),</td></tr>
+            <tr><td>opis</td> <td>VARCHAR(255),</td></tr>
+            <tr><td>autor</td> <td>VARCHAR(255),</td></tr>
+            <tr><td>kraj</td> <td>VARCHAR(255),</td></tr>
+            <tr><td>ilosc</td> <td>INT,</td></tr>
+            <tr><td>kategoria</td> <td>VARCHAR(255));</td></tr>
+            </table>
+            </br>
+            </br>
+            
+            <a href="./">Powr&#243;t do strony g&#322;&#243;wnej</a>
+            
             </br>
             </br>
             <p>Opracowa&#322;a Paulina Gawron</p>
-            </br>
-            </br>
-            <a href="./" style="font-size:25px; font-weight:bold; color:bisque ">HOME</a>
+            </div>
         </div>
     </body>
 </html>
