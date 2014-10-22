@@ -6,8 +6,12 @@ import javax.validation.constraints.Pattern;
 
 import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 public class Ksiazka implements Serializable, Comparable {
+    
+    
+    public final String regex = "[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+";
     
     private long id;
     @NotEmpty(message="To pole jest wymagane")
@@ -15,13 +19,16 @@ public class Ksiazka implements Serializable, Comparable {
     @NotEmpty(message="To pole jest wymagane")
     private String opis;
     @NotEmpty(message="To pole jest wymagane")
-    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?"+"[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+")  
+    @Pattern(regexp=regex, message="Musisz użyć min. 1 litery, możesz użyć kropki, myślnika i spacji")
     private String autor;
     @NotEmpty(message="To pole jest wymagane")
     private String kraj;
     
+    @Range(min=0, max=99, message="Liczba książek musi zawierać się między 0 a 99")
     private int ilosc;
+    
     @NotEmpty(message="To pole jest wymagane")
+    @Pattern(regexp="[a-zA-Z]+", message="Pole nie może zawierać cyfr")
     private String kategoria;
 
    

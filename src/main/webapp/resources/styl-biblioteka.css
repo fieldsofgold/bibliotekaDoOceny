@@ -11,6 +11,8 @@ body {
     background-color: #FAFAFA;
     font-family: Garamond;
     background-image:url('knigii.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 form {
@@ -57,7 +59,7 @@ td.b {
     border-width:0px 1px 1px 0px;
     text-align:left;
     padding-left:7px;
-    font-size:12px;
+    font-size:14px;
 
     font-weight:bold;
     color:#FAFAFA;
@@ -88,10 +90,10 @@ td.c {
     width:385px;
     float:left;
     padding-left:10px;
-/*    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #000000;*/
+    /*    border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 0px solid #000000;*/
 }
 #right {
     width:0px;
@@ -103,4 +105,5 @@ h3 {
     text-align: center;
     color:white;
     font-weight:bold;
+    
 }

@@ -43,7 +43,26 @@
                         <td class="b">Liczba:</td>     <td class="b"><form:input type="number" path="ilosc" /></td>
                     </tr>
                     <tr class="b">
-                        <td class="b">Kategoria:</td> <td class="b"><form:input path="kategoria" /></td>
+                        <td class="b">Kategoria:</td> 
+                        <td class="b">                
+                            <select id="kategoria" name="kategoria">
+                                <option value="Biografia">Biografia</option>
+                                <option value="Fantastyka">Fantastyka</option>
+                                <option value="Historyczna">Historyczna</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Literatura popularnonaukowa">Literatura popularnonaukowa</option>
+                                <option value="Literatura dzieci&#281ca">Literatura dzieci&#281ca</option>
+                                <option value="Klasyka">Klasyka</option>
+                                <option value="Krymina&#322;">Krymina&#322;</option>
+                                <option value="Poezja">Poezja</option>
+                                <option value="Przygodowa">Przygodowa</option>
+                                <option value="Religia">Religia</option>
+                                <option value="Romans">Romans</option>
+                                <option value="Satyra">Satyra</option>
+                                <option value="Sensacja">Sensacja</option>
+                                <option value="Thriller">Thriller</option>
+                                <option value="Inna">Inna</option>
+                            </select></td>
                     </tr>
                     <tr><td></td>
                         <td><form:errors path="kategoria" cssStyle="color: #ff0000;"/></td>
@@ -52,8 +71,9 @@
                         <td class="b"></td> <td class="b"></td>
                     </tr>
                     <tr class="b">
-                        <td class="b"><input type="submit" value="Dodaj" formaction="biblioteka"
-                                             formmethod="post" /></td> <td class="b"></td>
+                        <td class="b">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td class="b" style="text-align: center;"><input type="submit" value="Dodaj" formaction="biblioteka"
+                                                    formmethod="post" /></td> 
                     </tr>
                 </table>
 
@@ -77,9 +97,10 @@
                         </td>
                     </tr>
                     <tr class="b">
-                        <td>     </td><td class="b"><input type="submit" name="filter" value="Filtruj" ></td>
+                        <td>     </td><td class="b" style="text-align: center;"><input type="submit" name="filter" value="Filtruj" ></td>
                     </tr>
                 </table>
+                
                 <center><a href="./" style="font-size:25px; font-weight:bold; color:bisque ">Wstecz</a></center>
             </form>
         </div>
@@ -105,7 +126,7 @@
                         <td class="c"><c:out value="${ksiazka.kraj}" /></td>
                         <td class="c"><c:out value="${ksiazka.ilosc}" /></td>
                         <td class="c"><c:out value="${ksiazka.kategoria}" /></td>
-                        <td class="c"><a href="biblioteka?id=${ksiazka.id}&action=delete">Usu&#324;</a></td>
+                        <td class="c"><a href="biblioteka?id=${ksiazka.id}&action=delete" onclick="return confirm('Czy na pewno chcesz usun&#261;&#263; ten rekord?')">Usu&#324;</a></td>
                         <td class="c"><a href="bibliotekazmien?id=${ksiazka.id}&action=update">Zmie&#324;</a>
                         </td>
                     </tr>

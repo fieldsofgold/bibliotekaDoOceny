@@ -44,7 +44,26 @@
                         <td class="b">Liczba:</td> <td class="b"><form:input type="number" path="ilosc" /></td>
                     </tr>
                     <tr class="b">
-                        <td class="b">Kategoria:</td> <td class="b"><form:input path="kategoria" /></td>
+                        <td class="b">Kategoria:</td> 
+                        <td class="b">
+                            <select id="kategoria" name="kategoria">
+                                <option value="Biografia">Biografia</option>
+                                <option value="Fantastyka">Fantastyka</option>
+                                <option value="Historyczna">Historyczna</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Literatura popularnonaukowa">Literatura popularnonaukowa</option>
+                                <option value="Literatura dzieci&#281ca">Literatura dzieci&#281ca</option>
+                                <option value="Klasyka">Klasyka</option>
+                                <option value="Krymina&#322;">Krymina&#322;</option>
+                                <option value="Poezja">Poezja</option>
+                                <option value="Przygodowa">Przygodowa</option>
+                                <option value="Religia">Religia</option>
+                                <option value="Romans">Romans</option>
+                                <option value="Satyra">Satyra</option>
+                                <option value="Sensacja">Sensacja</option>
+                                <option value="Thriller">Thriller</option>
+                                <option value="Inna">Inna</option>
+                            </select></td>
                     </tr>
                     <tr><td></td>
                         <td><form:errors path="kategoria" cssStyle="color: #ff0000;"/></td>

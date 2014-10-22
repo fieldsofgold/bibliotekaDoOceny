@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import pl.altkom.biblioteka.model.ComparatorByAutor;
+import pl.altkom.biblioteka.model.ComparatorByIlosc;
 import pl.altkom.biblioteka.model.ComparatorByKat;
 import pl.altkom.biblioteka.model.ComparatorByKraj;
 import pl.altkom.biblioteka.model.ComparatorByTytul;
@@ -95,6 +96,7 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
                     }
                 }
             }
+
             if (atrybut == 6) {
                 for (int i = 0; i < ksiazki.size(); i++) {
                     if (ksiazki.get(i).getKategoria().matches(s)) {
@@ -114,6 +116,9 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
         }
         if (sort == 4) {
             Collections.sort(ksiazki, new ComparatorByKraj());
+        }
+        if (sort == 5) {
+            Collections.sort(ksiazki, new ComparatorByIlosc());
         }
         if (sort == 6) {
             Collections.sort(ksiazki, new ComparatorByKat());
