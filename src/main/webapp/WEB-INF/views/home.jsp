@@ -15,8 +15,8 @@
                     <li><a href="<c:url value="/biblioteka" />">KATALOG</a></li>
                 </ul>
                 <ul class="pull-right">
-                    <li><a href="#">ZALOGUJ SI&#280;</a></li>
-                    <li><a href="#">POMOC</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="<c:url value="/oprojekcie" />">O PROJEKCIE</a></li>
                 </ul>
             </div>
         </div>

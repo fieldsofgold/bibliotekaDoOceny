@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-10-22, 14:48:37
+    Author     : kursant2
+*/
+body {
+    font-family: Garamond;
+    background-image:url('logo_books1.jpg');
+}
+div {
+    /*border: 2px solid darkgoldenrod;*/
+    padding: 10px 40px; 
+/*    border-radius: 25px;*/
+
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    background-image:url('small1.png');
+
+    height:630px;
+    width:330px;
+    float:none;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+

@@ -87,4 +87,15 @@ public class BiblitekaController {
         return "biblioteka";
     }
 
+    @RequestMapping(value = "/oprojekcie", method = RequestMethod.GET)
+    public String bibliotekaDodaj(HttpServletRequest request) {
+
+        return "oprojekcie";
+    }
+
+    @RequestMapping(value = "/oprojekcie", method = RequestMethod.POST)
+    public String bibliotekaDodaj() {
+
+        return "biblioteka";
+    }
 }

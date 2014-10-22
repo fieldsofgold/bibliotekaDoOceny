@@ -4,7 +4,7 @@
     <head>
         <link href="${pageContext.request.contextPath}/resources/styl-biblioteka.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Insert title here</title>
+        <title>Katalog Biblioteki</title>
         <link rel="icon" href="<c:url value="/resources/favicon.ico" />" type="image/x-icon">
         <!--    <style>
                     
